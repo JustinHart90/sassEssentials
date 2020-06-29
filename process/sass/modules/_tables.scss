@@ -5,6 +5,10 @@ $color-even-cells: transparentize($yellow, .8);
   text-align: left;
   width: 100%;
 
+  @include break(0, 500px) {
+    padding-bottom: 40px;
+  }
+
   caption {
     font-size: 2.5rem;
     text-align: left;
@@ -27,6 +31,7 @@ $color-even-cells: transparentize($yellow, .8);
           background-color: opacify($color-even-cells, .3);
         }
       }
+      
       > th,
       > td {
         padding: 10px;

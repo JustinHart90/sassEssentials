@@ -17,6 +17,15 @@
 			margin-bottom: 0;
 			padding: 0 10%;
 		}
+		
+		h2 {
+			color: $yellow;
+			font-family: $font-main;
+			font-size: 4rem;
+			line-height: 125%;
+			margin-bottom: 0;
+			padding: 0 10%;
+		}
 
 		p {
 			padding: 0 10%;
@@ -26,14 +35,10 @@
 }
 
 .jumbotron {
-	@include backImage(
-		'../images/water.jpg',
-		600px);
+	@include backImage('../images/water.jpg', 100vh);
 	margin-top: 0;
 }
 
 .bridge {
-	@include backImage(
-		'../images/bridge.jpg',
-		300px, center center);
+	@include backImage('../images/bridge.jpg', 50vh, center right);
 }
